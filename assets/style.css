@@ -1,0 +1,35 @@
+body {
+	font-family: 'Lato', sans-serif;
+	color: #747704;
+	font-weight: 300
+}
+.mousetoHand{
+	cursor: pointer;
+}
+.text-muted {
+	color: #BCBB30;
+}
+.text-thin {
+	font-weight: 100;
+}
+.title-super {
+	font-size: 70px;
+}
+.title-logo {
+	margin-top: 40px;
+}
+p.main {
+	text-align: justify;
+}
+.textContainer {
+	vertical-align: middle;
+	display: inline-block;
+}
+img {
+	border:1px solid black;
+}
+.hrpadding {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+

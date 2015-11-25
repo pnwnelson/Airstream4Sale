@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Vintage Airstream Coffee Shop For Sale">
+		<meta name="keywords" content="Airstream, Coffee, Shop, Cafe, For Sale, Food Truck">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="assets/bootstrap.min.js"></script>
+		<title>Airstream Coffee Shop For Sale</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="assets/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/style.css">
+
+<style type="text/css">
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+
+    .popover   {
+	background-color: #e74c3c;
+	color: #ecf0f1;
+	width: 120px;
+	}
+	.popover.right .arrow:after {
+	border-right-color: #e74c3c;
+	}
+
+</style>
+<!--Goodle Analytics-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-64720744-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!--End Goodle Analytics-->
+
+	</head>
+<body>
+	<div class="container">
+		<!--Title Row-->
+		<div class="row">
+			<div class="col-md-12" style="clear: both">
+				<h1 class="title-super" style="float: left"><b>AIRSTREAM</b></h1>
+				<h1 class="title-super text-thin" style="float: left"> COFFEE SHOP</h1>
+			</div>
+		</div><hr class="hrpadding"	>
+		<!--Price and Contact Row-->
+		<div class="row">
+			<div class="col-md-6"><h2 class="text-thin textContainer"><b>$125,000</h2></div>
+			<div class="col-md-6 text-right">
+				<!-- Button to trigger Contact Form modal -->
+    				<br>
+    				<button type="button" role="button" class="btn btn-default" data-toggle="modal" data-target="#Contact">Seriously Interested? Contact Us</button>
+    				<!-- Modal -->
+				    <div id="Contact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				        <div class="modal-dialog">
+				        <div class="modal-content">
+				        <div class="modal-header">
+				            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				            <h4 class="modal-title text-center">Please provide your information and we'll get in touch.</h4>
+				            <p class="text-center">Your information will not be used for any other purpose.</p>
+				        </div>
+				        <div class="modal-body">
+				          <form class="form-horizontal" name="contactform" method="post" action="./assets/contactform2.php">
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="name">Name</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="name" name="name" placeholder="Name"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="phone">Phone Number</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="email">Email Address</label>
+						        <div class="col-md-6 input-group">
+						        <span class="input-group-addon">@</span>
+						            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="city">City, State</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="city" name="city" placeholder="City, State"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="financing">Is your financing in place?</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="financing" name="financing" placeholder="Financing in place?"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <div class="col-md-6">
+						            <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+						        </div>
+						    </div>
+						</form>
+				        </div><!-- End of Modal body -->
+				        </div><!-- End of Modal content -->
+				        </div><!-- End of Modal dialog -->
+				    </div><!-- End of Modal -->
+			</div>
+		</div><hr style="margin-top:1px">
+		<!--Content Row-->
+		<div class="row">
+			<!--Photo Modals-->
+			<div class="col-md-3">
+				<!-- Interior Photos Modal -->
+				<div =class="row">
+			        <h4 class="mousetoHand text-center" data-toggle="modal" data-target="#IntPhotos">
+			        <img class="img-responsive" src="./images/FrontPageInt.jpg" alt="Interior Photos">Interior Photos</h4>
+				</div>
+				<hr>
+				<!-- Exterior Photos Modal -->
+				<div =class="row">
+			        <h4 class="mousetoHand text-center" data-toggle="modal" data-target="#ExtPhotos">
+			        <img class="img-responsive" src="./images/FrontPageExt.jpg" alt="Exterior Photos">Exterior Photos</h4>
+				</div>
+				<hr>
+				<!-- Machine Photos Modal -->
+				<div =class="row">
+			        <h4 class="mousetoHand text-center" data-toggle="modal" data-target="#MachinePhotos">
+			        <img class="img-responsive" src="./images/FrontPageMachine.jpg" alt="Machine Photos">Espresso Machine Photos</h4>
+				</div>
+				<hr>
+				<!-- Operating Photos Modal -->
+				<div =class="row">
+			        <h4 class="mousetoHand text-center" data-toggle="modal" data-target="#OpsPhotos">
+			        <img class="img-responsive" src="./images/FrontPageOps.jpg" alt="Operations Photos">Operations Photos</h4>
+				</div>
+			</div>
+			<!--Description-->
+			<div class="col-md-9"><p class="main">For sale is a vintage 1964 Airstream Sovereign Land Yacht that has been converted to a coffee establishment. All equipment is high end and 1.5 years old. The unit has been beautifully remodeled. There is a 30" x 65" serving hatch. All the electrical wiring is new and includes 12v, 110v and 220v. The interior has been designed as a cafe using items such as reclaimed wood, solid maple cabinet doors and marmoleum counter tops with aluminum edging. The design is very spacious and very detailed. There is bench seating in the front waiting area. The shop is turn key and all equipment, branding (website, social media pages, graphics, photography, etc) and recipes are included. You will need to supply the power sources.
+
+			<br>
+			<br>
+			This is a one of a kind Airstream with no other food/beverage oriented Airstream having as much interior design as this one. This is truly a destination attraction. Every day people are taking photos of it. But don't let the touristy part take away from the coffee. With the Slayer Espresso machine, this setup is ready to stand with the best coffee establishments any where in the world - just bring excellent beans and an excellent program. With the flip of a switch, this Airstream can have immediate impact to any coffee scene - <b>no waiting for a build out</b>. If you've been thinking of something like this, here's a chance to own the only one of its kind. This is a stunning way to separate yourself and stand out from the others or to reach new markets through farmers markets, events or exploring new neighborhoods.</p>
+				<hr>
+				<div class="row">
+					<!--List of Airstream items and equipment-->
+					<div class="col-md-6"><b>The Airstream:</b>
+					<br>
+					<ul>
+					<li>1964 Sovereign Land Yacht - 30' in length</li>
+					<li>Polished exterior</li>
+					<li>Two 30lb polished aluminum LP tanks</li>
+					<li>LP pipes and valves throughout</li>
+					<li>Safety glass all around, including jalouse window.</li>
+					<li>Window gaskets all around</li>
+					<li>Spring assembly for patio awning</li>
+					<li>Smoked skylight from Inland RV</li>
+					<li>Zip Dee awnings on both sides (not new but good condition)</li>
+					<li>Sandblasted tongue and bumper with rust protection applied</li>
+					<li>Dexter axles and drum brakes</li>
+					<li>Steel wheels and Hercules trailer tires</li>
+					<li>Brake, scare and running lights</li>
+					<li>Four BAL stabilizing jacks</li>
+					<li>26 gallon fresh water tank</li>
+					<li>32 gallon gray tank</li>
+					<li>PEX plumbing throughout</li>
+					<li>Girard tankless LP water heater</li>
+					<li>See Level II monitoring (fresh, gray, lp, 12v, temps)</li>
+					<li>2 layered Reflectix insulation</li>
+					<li>12/110/220v wiring</li>
+					<li>12/110/220v 50amp Intellipower RV electrical panel</li>
+					<li>Separate 220v 50amp panel for espresso machine</li>
+					<li>12 volt Marine battery in firebox</li>
+					<li>LED recessed lighting throughout with dimmer switch</li>
+					<li>LED strip lighting in front</li>
+					<li>LED brake lights, running lights & LED scare light</li>
+					<li>Fantastic Fan</li>
+					<li>Dometic Penguin II AC unit with drain tube</li>
+					<li>Suburban LP furnace</li>
+					<li>Custom built cabinets with maple doors</li>
+					<li>Reclaimed wood divider walls</li>
+					<li>Custom built front bench seating with storage</li>
+					<li>5/8" subfloor</li>
+					<li>Luxury vinyl tile floors</li>
+					<li>Washington State L&I approved, local health district approved</li>
+					<li>Small area of wrinkles/dents on the rear top panel</li>
+					<li>The top has marine grade white paint</li>
+					</ul>
+					* The Airstream was completely gutted and rebuilt in the first half of 2014 and everything in this list, including the equipment was brand new in first half of 2014.
+					<br>* This page was last updated on 11/10/2015</div>
+					<div class="col-md-6">
+					<b>Equipment:</b>
+					<ul>
+					<li>Beautiful custom designed <a href="http://slayerespresso.com" target="bobdole">Slayer Espresso</a> 2 group machine. Designed to match the Airstream's exterior ($19K)</li>
+					<li>Mazzer Kony grinder</li>
+					<li>Baratza Virtuoso Grinders (2)</li>
+					<li>Pour over equipment (Chemex beakers, Bona Vita kettles, etc)</li>
+					<li>French press equipment</li>
+					<li>Yama 8 cup cold brew tower</li>
+					<li>Barista tools (pitchers, Reg Barber tamper, canvas aprons, scales, etc)</li>
+					<li>Porcelain and glassware</li>
+					<li>Beverage-Air undercounter refridgerator</li>
+					<li>Espresso Parts 24" rinser</li>
+					<li>Vitamix  T&G 2 blender</li>
+					<li>125' of 220v-50amp outdoor electrical cable (3 sections)</li>
+					<li>Square POS stand w/ iPad, receipt printer and cash drawer</li>
+					<li>Hand made reclaimed wood sidewalk chalkboard signs (2)</li>
+					</ul></div>
+				</div>
+			</div>
+		</div>
+		<div class="row"></div>
+</div>
+<!-- Interior Photos Modal -->
+	<div class="modal fade" id="IntPhotos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="IntPhotos">Interior Photos</h3>
+				</div>
+				<div class="modal-body">
+					LED strip lighting under bench and illumating the shelving area
+					<img class="img-responsive" src="./images/Int/IMG_9724.jpg"><br>
+					<img class="img-responsive" src="./images/Int/GOPR2496.jpg"><br>
+					Handwashing station
+					<img class="img-responsive" src="./images/Int/IMG_1058.jpg"><br>
+					3 compartment sink
+					<img class="img-responsive" src="./images/Int/IMG_1065.jpg"><br>
+					24" rinser
+					<img class="img-responsive" src="./images/Int/IMG_1066.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1072.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1076.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1079.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1080.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1090.jpg"><br>
+					Storage under front bench
+					<img class="img-responsive" src="./images/Int/IMG_1091.jpg"><br>
+					Electrical panels (2)
+					<img class="img-responsive" src="./images/Int/IMG_1093.jpg"><br>
+					50amp 12/110/220v RV inverter panel
+					<img class="img-responsive" src="./images/Int/IMG_1094.jpg"><br>
+					50amp panel for espresso machine
+					<img class="img-responsive" src="./images/Int/IMG_1095.jpg"><br>
+					Desk area
+					<img class="img-responsive" src="./images/Int/IMG_1099.jpg"><br>
+					Reclaimed wood
+					<img class="img-responsive" src="./images/Int/IMG_1174.jpg"><br>
+					Cream/sugar station
+					<img class="img-responsive" src="./images/Int/IMG_1179.jpg"><br>
+
+					Cold brew tower
+					<img class="img-responsive" src="./images/Int/IMG_1182.jpg"><br>
+					LED recessed ceiling lights
+					<img class="img-responsive" src="./images/Int/IMG_1188.jpg"><br>
+					See Level II monitoring system
+					<img class="img-responsive" src="./images/Int/IMG_1191.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1194.jpg"><br>
+					Slow brew station
+					<img class="img-responsive" src="./images/Int/IMG_1214.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1217.jpg"><br>
+					Fantastic Fan in the rear
+					<img class="img-responsive" src="./images/Int/IMG_1219.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1230.jpg"><br>
+					Front bench seating with shelving
+					<img class="img-responsive" src="./images/Int/IMG_1233.jpg"><br>
+					<img class="img-responsive" src="./images/Int/IMG_1236.jpg"><br>
+					Espresso station
+					<img class="img-responsive" src="./images/Int/IMG_1241.jpg"><br>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Exterior Photos Modal -->
+	<div class="modal fade" id="ExtPhotos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="ExtPhotos">Exterior Photos</h3>
+				</div>
+				<div class="modal-body">
+					Serve out of the hatch or inside
+					<img class="img-responsive" src="./images/Ext/14_June_240.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/14_June_241.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/14_June_298.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_2701.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/14_June_489.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_0060.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_8116.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_8815.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_8848.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_9279.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_9350.jpg"><br>
+					<img class="img-responsive" src="./images/Ext/IMG_9731.jpg"><br>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Machine Photos Modal -->
+	<div class="modal fade" id="MachinePhotos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="IntPhotos">Operation Photos</h3>
+				</div>
+				<div class="modal-body">
+					This machine was customized with highly polished aluminum, custom rivets and a front design inspired by the front of the Airstream.
+					<img class="img-responsive" src="./images/Machine/IMG_8068.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/IMG_8832.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/IMG_9315.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/14_June_187.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/14_June_194.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/14_June_195.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/14_June_206.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/14_June_208.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/14_June_229.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/IMG_9315.jpg"><br>
+					The machine was featured in Fresh Cup magazine
+					<img class="img-responsive" src="./images/Machine/IMG_8798.jpg"><br>
+					<img class="img-responsive" src="./images/Machine/IMG_8802.jpg"><br>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Operations Photos Modal -->
+	<div class="modal fade" id="OpsPhotos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="IntPhotos">Operation Photos</h3>
+				</div>
+				<div class="modal-body">
+					Handmade sidewalk sign (1 of 2)
+					<img class="img-responsive" src="./images/Ops/sidewalksign.jpg"><br>
+					Handmade sidewalk sign (2 of 2)
+					<img class="img-responsive" src="./images/Int/IMG_1180.jpg"><br>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<!--Popover "Thank you" after submitting modal form-->
+<script>
+$('#send_btn').popover({content: 'Thank You'},'click');
+</script>
+</body>
+</html>
