@@ -36,22 +36,27 @@
   ga('send', 'pageview');
 </script>
 <!--End Goodle Analytics-->
+<!--JS for nav bar-->
+<script>
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+</script>
+<!--end JS for nav bar-->
 
 	</head>
 <body>
 	<div class="container">
-		<!--Title Row-->
-		<div class="row">
-			<div class="col-md-12" style="clear: both">
-				<h1 class="title-super" style="float: left"><b>DUDE</b></h1>
-				<h1 class="title-super text-thin" style="float: left"> COFFEE SHOP</h1>
-			</div>
-		</div><hr class="hrpadding"	>
-		<!--Price and Contact Row-->
-		<div class="row">
-			<div class="col-md-6"><h2 class="text-thin textContainer"><b>$125,000</h2></div>
-			<div class="col-md-6 text-right">
-				<!-- Button to trigger Contact Form modal -->
+		<!--Header method of Title Bar with Contact Button-->
+		<header>
+			<h1 class="title-super" style="float: left"><b>AIRSTREAM</b></h1>
+			<h1 class="title-super text-thin" style="float: left"> COFFEE SHOP</h1>
+			<!-- Button to trigger Contact Form modal -->
+    				<br>
     				<br>
     				<button type="button" role="button" class="btn btn-default" data-toggle="modal" data-target="#Contact">Seriously Interested? Contact Us</button>
     				<!-- Modal -->
@@ -106,6 +111,19 @@
 				        </div><!-- End of Modal content -->
 				        </div><!-- End of Modal dialog -->
 				    </div><!-- End of Modal -->
+		</header>
+
+		<!--Title Row-->
+		<div class="row">
+			<div class="col-md-12" style="clear: both">
+			</div>
+		</div><hr class="hrpadding"	>
+		<!--Price and Contact Row-->
+		<div class="row">
+			<div class="col-md-6"><h2 class="text-thin textContainer"><b>$125,000</h2></div>
+			<div class="col-md-6 text-right">
+				<!-- Old Button to trigger Contact Form modal location-->
+
 			</div>
 		</div><hr style="margin-top:1px">
 		<!--Content Row-->
