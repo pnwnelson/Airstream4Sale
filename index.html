@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Vintage Airstream Coffee Shop For Sale">
 		<meta name="keywords" content="Airstream, Coffee, Shop, Cafe, For Sale, Food Truck">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script src="assets/bootstrap.min.js"></script>
 		<title>Airstream Coffee Shop For Sale</title>
@@ -56,6 +57,11 @@
             background: #ffffff;
             text-align: left;
         }
+        @media(max-width: 720px) {
+  		header {
+		  font-size: 18pt;
+		}
+}
 
 </style>
 
@@ -87,7 +93,11 @@ $(window).scroll(function() {
 <body>
 	<div class="container">
 		<!--Header method of Title Bar with Contact Button-->
-		<header><b>AIRSTREAM</b> COFFEE SHOP</header>
+		<div class="row">
+			<div class="col-md-12" style="clear: both">
+			<header><b>AIRSTREAM</b> COFFEE SHOP</header>
+			</div>
+		</div>
 			<!-- Button to trigger Contact Form modal -->
     				<button type="button" role="button" class="btn btn-default" data-toggle="modal" data-target="#Contact">Seriously Interested? Contact Us</button>
     				<!-- Modal -->
