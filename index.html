@@ -25,28 +25,40 @@
 	.popover.right .arrow:after {
 	border-right-color: #e74c3c;
 	}
+		* {
+		  margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		vertical-align: baseline;
+		}
+
 		header{
-            text-align: center;
-            height: 108px;
-            background: #ffffff;
+            text-align: left;
+            font-size: 70px;
+            font-weight: 100;
+            line-height: 80px;
+            height: 85px;
+            background: #eeeeee;
 
             // set animation
             -webkit-transition: all 0.4s ease;
             transition: all 0.4s ease;
         }
+
         header.sticky {
             position: fixed;
-            font-size: 14px;
-            line-height: 48px;
-            height: 48px;
-            width: 80%;
-            background: #ffffff;
+            font-size: 24px;
+            line-height: 36px;
+            height: 36px;
+            width: 100%;
+            background: #eeeeee;
             text-align: left;
-            padding-left: 20px;
         }
+
 </style>
 
-<!--Responsive Header-->
+<!--Responsive Header JS-->
 <script>
 $(window).scroll(function() {
     if ($(this).scrollTop() > 1){
@@ -57,7 +69,7 @@ $(window).scroll(function() {
     }
 });
 </script>
-<!--End Responsive Header-->
+<!--End Responsive Header JS-->
 
 <!--Goodle Analytics-->
 <script>
@@ -74,12 +86,8 @@ $(window).scroll(function() {
 <body>
 	<div class="container">
 		<!--Header method of Title Bar with Contact Button-->
-		<header>
-			<h1 class="title-super" style="float: left"><b>AIRSTREAM</b></h1>
-			<h1 class="title-super text-thin" style="float: left"> COFFEE SHOP</h1>
+		<header><b>AIRSTREAM</b> COFFEE SHOP</header>
 			<!-- Button to trigger Contact Form modal -->
-    				<br>
-    				<br>
     				<button type="button" role="button" class="btn btn-default" data-toggle="modal" data-target="#Contact">Seriously Interested? Contact Us</button>
     				<!-- Modal -->
 				    <div id="Contact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -133,7 +141,7 @@ $(window).scroll(function() {
 				        </div><!-- End of Modal content -->
 				        </div><!-- End of Modal dialog -->
 				    </div><!-- End of Modal -->
-		</header>
+
 
 		<!--Title Row-->
 		<div class="row">
