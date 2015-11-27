@@ -63,6 +63,22 @@
 		}
 }
 
+		.btn-default {
+			position: fixed;
+			bottom: 5em;
+			left: 150px;
+			text-decoration: none;
+			color: #000000;
+			background-color:#ff4f00;
+			font-size: 14px;
+			padding: 1em;
+			display: none;
+		}
+
+		.btn:hover {
+			background-color: rgba(135, 135, 135);
+		}
+
 </style>
 
 <!--Responsive Header JS-->
@@ -98,60 +114,7 @@ $(window).scroll(function() {
 			<header><b>AIRSTREAM</b> COFFEE SHOP</header>
 			</div>
 		</div>
-			<!-- Button to trigger Contact Form modal -->
-    				<button type="button" role="button" class="btn btn-default" data-toggle="modal" data-target="#Contact">Seriously Interested? Contact Us</button>
-    				<!-- Modal -->
-				    <div id="Contact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				        <div class="modal-dialog">
-				        <div class="modal-content">
-				        <div class="modal-header">
-				            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				            <h4 class="modal-title text-center">Please provide your information and we'll get in touch.</h4>
-				            <p class="text-center">Your information will not be used for any other purpose.</p>
-				        </div>
-				        <div class="modal-body">
-				          <form class="form-horizontal" name="contactform" method="post" action="./assets/contactform2.php">
-						    <div class="form-group">
-						        <label class="control-label col-md-4" for="name">Name</label>
-						        <div class="col-md-6">
-						            <input type="text" class="form-control" id="name" name="name" placeholder="Name"/>
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="control-label col-md-4" for="phone">Phone Number</label>
-						        <div class="col-md-6">
-						            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number"/>
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="control-label col-md-4" for="email">Email Address</label>
-						        <div class="col-md-6 input-group">
-						        <span class="input-group-addon">@</span>
-						            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="control-label col-md-4" for="city">City, State</label>
-						        <div class="col-md-6">
-						            <input type="text" class="form-control" id="city" name="city" placeholder="City, State"/>
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <label class="control-label col-md-4" for="financing">Is your financing in place?</label>
-						        <div class="col-md-6">
-						            <input type="text" class="form-control" id="financing" name="financing" placeholder="Financing in place?"/>
-						        </div>
-						    </div>
-						    <div class="form-group">
-						        <div class="col-md-6">
-						            <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
-						        </div>
-						    </div>
-						</form>
-				        </div><!-- End of Modal body -->
-				        </div><!-- End of Modal content -->
-				        </div><!-- End of Modal dialog -->
-				    </div><!-- End of Modal -->
+
 
 
 		<!--Title Row-->
@@ -265,12 +228,73 @@ $(window).scroll(function() {
 					<li>125' of 220v-50amp outdoor electrical cable (3 sections)</li>
 					<li>Square POS stand w/ iPad, receipt printer and cash drawer</li>
 					<li>Hand made reclaimed wood sidewalk chalkboard signs (2)</li>
-					</ul></div>
+					</ul>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
 				</div>
 			</div>
 		</div>
 		<div class="row"></div>
 </div>
+<!-- Button to trigger Contact Form modal -->
+    				<button type="button" role="button" class="btn btn-default" data-toggle="modal" data-target="#Contact">Seriously Interested? Contact Us</button>
+    				<!-- Modal -->
+				    <div id="Contact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				        <div class="modal-dialog">
+				        <div class="modal-content">
+				        <div class="modal-header">
+				            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				            <h4 class="modal-title text-center">Please provide your information and we'll get in touch.</h4>
+				            <p class="text-center">Your information will not be used for any other purpose.</p>
+				        </div>
+				        <div class="modal-body">
+				          <form class="form-horizontal" name="contactform" method="post" action="./assets/contactform2.php">
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="name">Name</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="name" name="name" placeholder="Name"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="phone">Phone Number</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="email">Email Address</label>
+						        <div class="col-md-6 input-group">
+						        <span class="input-group-addon">@</span>
+						            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="city">City, State</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="city" name="city" placeholder="City, State"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <label class="control-label col-md-4" for="financing">Is your financing in place?</label>
+						        <div class="col-md-6">
+						            <input type="text" class="form-control" id="financing" name="financing" placeholder="Financing in place?"/>
+						        </div>
+						    </div>
+						    <div class="form-group">
+						        <div class="col-md-6">
+						            <button type="submit" value="Submit" class="btn btn-custom pull-right" id="send_btn">Send</button>
+						        </div>
+						    </div>
+						</form>
+				        </div><!-- End of Modal body -->
+				        </div><!-- End of Modal content -->
+				        </div><!-- End of Modal dialog -->
+				    </div><!-- End of Modal -->
+
+
 <!-- Interior Photos Modal -->
 	<div class="modal fade" id="IntPhotos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -412,8 +436,22 @@ $(window).scroll(function() {
 <br>
 <br>
 <!--Popover "Thank you" after submitting modal form-->
-<script>
-$('#send_btn').popover({content: 'Thank You'},'click');
-</script>
+		<script>
+		$('#send_btn').popover({content: 'Thank You'},'click');
+		</script>
+<!--Floating Contact Button-->
+        <script>
+			jQuery(document).ready(function() {
+				var offset = 0;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.btn').fadeIn(duration);
+					} else {
+						jQuery('.btn').fadeOut(duration);
+					}
+				});
+			});
+		</script>
 </body>
 </html>
