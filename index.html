@@ -65,7 +65,7 @@
 				}
 		}
 
-				.btn-default {
+				.btn-contact {
 					position: fixed;
 					bottom: 5em;
 					left: 75px;
@@ -235,7 +235,7 @@
 		</div> <!--closing div for container -->
 
 		<!-- Button to trigger Contact Form Modal -->
-		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#Contact">Seriously Interested? Contact Us</button>
+		<button type="button" class="btn btn-contact" data-toggle="modal" data-target="#Contact"><strong>Seriously Interested? Contact Us</strong></button>
 		<!-- Contact Form Modal -->
 		<div id="Contact" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		    <div class="modal-dialog">
@@ -448,9 +448,9 @@
 				var duration = 500;
 				jQuery(window).scroll(function() {
 					if (jQuery(this).scrollTop() > offset) {
-						jQuery('.btn').fadeIn(duration);
+						jQuery('.btn-contact').fadeIn(duration);
 					} else {
-						jQuery('.btn').fadeOut(duration);
+						jQuery('.btn-contact').fadeOut(duration);
 					}
 				});
 			});
