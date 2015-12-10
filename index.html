@@ -67,14 +67,14 @@
 
 				.btn-contact {
 					position: fixed;
-					bottom: 5em;
-					left: 75px;
+					bottom: 1em;
+					right: 75px;
 					text-decoration: none;
 					color: #000000;
 					background-color:#ff4f00;
 					font-size: 14px;
 					padding: 1em;
-					display: none;
+
 				}
 
 				.btn:hover {
@@ -441,19 +441,6 @@
 		$('#send_btn').popover({content: 'Thank You'},'click');
 		</script>
 
-		<!--Floating Contact Button-->
-	    <script>
-			jQuery(document).ready(function() {
-				var offset = 0;
-				var duration = 500;
-				jQuery(window).scroll(function() {
-					if (jQuery(this).scrollTop() > offset) {
-						jQuery('.btn-contact').fadeIn(duration);
-					} else {
-						jQuery('.btn-contact').fadeOut(duration);
-					}
-				});
-			});
-		</script>
+
 	</body>
 </html>
