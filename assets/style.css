@@ -80,12 +80,15 @@ header.sticky {
   header {
 		font-size: 18pt;
 		text-align: center;
-  }
+	}
+	.modal-dialog {
+		max-width: 100%;
+	}
 }
 @media all and (max-width: 920px) and (min-width: 720px) {
   header {
     font-size: 32pt;
-  }
+	}
 }
 @media all and (max-width: 1000px) and (min-width: 920px) {
   header {
